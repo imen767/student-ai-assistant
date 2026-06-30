@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>StudentAssistant</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/static/style.css" />
+
+</head>
+<body>
+    <aside class="sidebar">
+        <div class="sidebar-logo">
+            <div class="logo-icon">⚡</div>
+            <span class="logo-text">StudentAssistant</span>
+            <!-- Capacites -->
+        </div>
+        <div class="sidebar-section">
+                <p class="sidebar-label">Capabilities</p>
+                <ul class="capabilities-list">
+                    <li class="capability-item">
+                        <span>📚</span>
+                        <span>Academic questions</span>
+                    </li>
+                    <li class="capability-item">
+                        <span>🔍</span>
+                        <span>Online resources</span>
+                    </li>
+                    <li class="capability-item">
+                        <span>💼</span>
+                        <span>Career advice</span>
+                    </li>
+                    <li class="capability-item">
+                        <span>🏆</span>
+                        <span>Certifications</span>
+                    </li>
+                </ul>
+
+        </div>
+        <!-- Bas de la sidebar -->
+        <div class="sidebar-bottom">
+            <!-- Switch langue-->
+             <div class="language-switch">
+                <button class="language-button" data-lang="en">EN</button>
+                <button class="language-button" data-lang="fr">FR</button>
+            </div>
+            <!-- Reset-->
+            
+                <button class="reset-button" id="resetBtn">↺ New conversation</button>
+            
+        </div>
+    </aside>
+    <main class="main">
+        <header class="header">
+            <div class="agent-avatar">🎓</div>
+        <div>
+                <h1 class="agent-name">Student AI Assistant</h1>
+                <p class="agent-status">
+                    <span class="status-dot"></span>
+                    Online · Powered by Azure AI Foundry
+                </p>
+        </div>
+            
+            
+        </header>
+        <!-- ! zone messages -->
+        <div class="messages" id="messages">
+
+                <!-- Messages will be displayed here -->
+        <div class="welcome-screen" id="welcomeScreen">
+                    <h2 class="welcome-title">How can I help you?</h2>
+                    <p class="welcome-sub">Ask me anything about academics, career, or certifications.</p>
+                
+            <div class="suggestion-grid">
+                <button class="suggestion">Explain neural networks</button>
+                <button class="suggestion">Find free Python courses</button>
+                <button class="suggestion">Best Microsoft certs for AI dev?</button>
+                <button class="suggestion">How to write a tech CV?</button>
+            </div>
+        </div>
+        </div>
+        <!-- ! zone input -->
+        <div class="input-area">
+            <div class="input-wrapper">
+                <textarea id="messageInput" class="message-input" placeholder="Ask anything..." rows="1"></textarea>
+                <button class="send-btn" id="sendBtn">➤</button>
+            </div>
+            <p class="input-hint">Enter to send · Shift+Enter for new line</p>
+        </div>
+
+
+    </main>
+    <script src="/static/script.js"></script>
+
+</body>
+</html>
